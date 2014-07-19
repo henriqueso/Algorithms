@@ -7,7 +7,7 @@ package br.com.henriqueso.training.search;
  * @author henrique
  * 
  */
-public class BinarySearch {
+public class BinarySearch implements SearchAlgorithm {
 
     /**
      * Searches key into array
@@ -17,7 +17,7 @@ public class BinarySearch {
      * 
      * @return index of found element or -1 if not found
      */
-    public static int search(int[] arr, int key) {
+    public int search(int[] arr, int key) {
         int low = 0, high = arr.length - 1;
 
         while (low <= high) {

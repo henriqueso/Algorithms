@@ -14,6 +14,8 @@ import org.junit.Test;
  */
 public class BinarySearchTest {
 
+    private SearchAlgorithm algorithm = new BinarySearch();
+
     /**
      * Test case when key exists
      */
@@ -28,7 +30,7 @@ public class BinarySearchTest {
         /**
          * WHEN searching with binary search algorithm
          */
-        int index = BinarySearch.search(arr, key);
+        int index = algorithm.search(arr, key);
 
         /**
          * THEN must return index 4
@@ -47,7 +49,7 @@ public class BinarySearchTest {
         /**
          * WHEN searching with binary search algorithm
          */
-        int index = BinarySearch.search(arr, key);
+        int index = algorithm.search(arr, key);
 
         /**
          * THEN must return -1
