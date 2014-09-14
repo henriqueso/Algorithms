@@ -1,5 +1,4 @@
 Algorithms
 ==========
 
-Repository to test/study algorithms
-
+Repository to test/study algorithms.
